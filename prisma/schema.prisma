@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Participant {
+  id        String   @id @default(uuid())
+  num       Int      @unique
+  name      String
+  church    String   // 'paris', 'bourget', 'invite'
+  room      String?
+  createdAt DateTime @default(now())
+}
+
+model Announcement {
+  id        String   @id @default(uuid())
+  title     String
+  body      String
+  type      String   // 'info', 'urgent', 'pratique'
+  audience  String   // 'tous', 'paris', 'bourget', 'invite'
+  createdAt DateTime @default(now())
+}
