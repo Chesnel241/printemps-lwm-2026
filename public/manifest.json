@@ -1,0 +1,21 @@
+{
+  "name": "Retraite Printemps LWM 2026",
+  "short_name": "Retraite LWM",
+  "description": "Application officielle de la Retraite de Printemps 2026",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1628",
+  "theme_color": "#153463",
+  "icons": [
+    {
+      "src": "/logo-lwm.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/logo-lwm.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
